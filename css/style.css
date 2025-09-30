@@ -98,7 +98,7 @@ body {
 /* ---------- Hero Section ---------- */
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 20px 20px;
   background: linear-gradient(180deg, #fff, #f0f0f0);
 }
 .hero h1 {
@@ -112,18 +112,19 @@ body {
 .hero h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #007bff;
   margin: 20px 0;
 }
 .hero p {
   font-size: 1.2rem;
-  max-width: 650px;
-  margin: 0 auto 30px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /* ---------- Features Section ---------- */
 .features {
-  padding: 50px 20px;
+  /* padding: 50px 20px; */
+  background: linear-gradient(180deg, #fff, #f0f0f0);
+
 }
 .features ul {
   list-style: none;
