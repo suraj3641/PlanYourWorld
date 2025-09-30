@@ -1,0 +1,179 @@
+/* ---------- Global ---------- */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fa;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-brand span { color: #000033; }
+
+.nav-link {
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover { color: #ff6600; }
+
+.dropdown-menu {
+  border-radius: 12px;
+  animation: dropdownFade 0.3s ease;
+}
+
+@keyframes dropdownFade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.btn-orange {
+  background: #ff6600;
+  color: #fff;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn-orange:hover { background: #e85500; }
+
+/* ---------- Dropdown Hover Desktop ---------- */
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+.dropdown-menu {
+  width: 260px;   /* Fixed width */
+  min-width: 0;   
+}
+
+.dropdown-item {
+  height: auto;    /* Height content ke hisaab se */
+  white-space: normal; 
+}
+
+
+/* ---------- Mobile Slide Menu ---------- */
+@media (max-width: 991px) {
+  #navbarNav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background: white;
+    padding: 2rem 1rem;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    transition: left 0.4s ease;
+    z-index: 999;
+  }
+
+  #navbarNav.active { left: 0; }
+
+  .navbar-nav { flex-direction: column; align-items: flex-start; }
+
+  .nav-link { font-size: 1.1rem; }
+
+  .dropdown-menu { display: none; position: static; float: none; background: none; box-shadow: none; }
+  .dropdown-menu.show { display: block; }
+}
+
+/* Hamburger icon */
+.navbar-toggler { border: none; outline: none; }
+.navbar-toggler-icon {
+  width: 30px; height: 30px; display: inline-block;
+  background-repeat: no-repeat; background-position: center;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,0,0,0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+#mobileToggle.open .navbar-toggler-icon { transform: rotate(90deg); transition: transform 0.3s ease; }
+
+
+/* ---------- Hero Section ---------- */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #fff, #f0f0f0);
+}
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #000;
+}
+.hero h1 span {
+  color: #ff5722;
+}
+.hero h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #007bff;
+  margin: 20px 0;
+}
+.hero p {
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin: 0 auto 30px;
+}
+
+/* ---------- Features Section ---------- */
+.features {
+  padding: 50px 20px;
+}
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+.features li {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.features li::before {
+  content: "✔ ";
+  color: #ff5722;
+  font-weight: bold;
+}
+
+/* ---------- Countdown ---------- */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+.countdown div {
+  background: #ff5722;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 70px;
+}
+.countdown div span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+/* footer section */
+ .link-hover:hover {
+    text-decoration: underline !important;
+    color: #ff5722!important;
+ }
