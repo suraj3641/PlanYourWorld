@@ -17,7 +17,7 @@
 
 /* Review Card Styling */
 .review-card {
-    background-color: #f0f4f8; /* A light blue-gray background for the cards */
+    background-color: #f0f4f8; 
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     display: flex;
