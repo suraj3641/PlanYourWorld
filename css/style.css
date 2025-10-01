@@ -49,12 +49,12 @@ body {
 }
 
 .dropdown-menu {
-  width: 260px;   /* Fixed width */
+  width: 260px;
   min-width: 0;   
 }
 
 .dropdown-item {
-  height: auto;    /* Height content ke hisaab se */
+  height: auto; 
   white-space: normal; 
 }
 
@@ -87,7 +87,7 @@ body {
 /* Hamburger icon */
 .navbar-toggler { border: none; outline: none; }
 .navbar-toggler-icon {
-  width: 30px; height: 30px; display: inline-block;
+  width: 20px; height: 20px; display: inline-block;
   background-repeat: no-repeat; background-position: center;
   background-size: contain;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,0,0,0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -122,7 +122,7 @@ body {
 
 /* ---------- Features Section ---------- */
 .features {
-  /* padding: 50px 20px; */
+
   background: linear-gradient(180deg, #fff, #f0f0f0);
 
 }
@@ -204,14 +204,9 @@ body {
   }
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa; /* A light grey background for the section */
-}
 
-/* Section Title */
 .section-title {
-    color: #0d6efd; /* Bootstrap primary color */
+    color: #0d6efd; 
     font-weight: 700;
     font-size: 2.5rem;
 }
@@ -225,17 +220,17 @@ body {
 
 /* Check Icons */
 .mentor-list .fa-check-circle {
-    color: #dc3545; /* A color similar to the checkmark in the image */
+    color: #dc3545; 
 }
 
 /* Mentor Image container */
 .mentor-image-container img {
-    border-radius: 15px; /* Subtle rounded corners */
+    border-radius: 15px; 
     transition: transform 0.5s ease-in-out;
 }
 
 .mentor-image-container img:hover {
-    transform: scale(1.03); /* Subtle zoom on hover */
+    transform: scale(1.03); 
 }
 
 /* Custom Animations */
