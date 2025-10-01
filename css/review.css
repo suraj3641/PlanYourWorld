@@ -1,0 +1,70 @@
+
+
+.reviews-section {
+    background-color: #ffffff;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    color: #495057;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #0d6efd;
+}
+
+/* Review Card Styling */
+.review-card {
+    background-color: #f0f4f8; /* A light blue-gray background for the cards */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.review-text {
+    font-size: 1rem;
+    color: #495057;
+    line-height: 1.6;
+}
+
+.reviewer-info {
+    font-size: 0.9rem;
+}
+
+.reviewer-img {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #0d6efd; /* Blue border around the profile picture */
+    object-fit: cover;
+}
+
+.reviewer-name {
+    color: #0d6efd; /* Blue color for the name */
+}
+
+.reviewer-title {
+    font-size: 0.85rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .section-subtitle {
+        font-size: 1.2rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .review-card {
+        padding: 20px;
+    }
+}

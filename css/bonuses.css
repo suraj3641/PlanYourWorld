@@ -1,0 +1,67 @@
+
+
+/* Main Section with Unique Background and Polished Look */
+.bonuses-section {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    margin: 40px auto;
+    padding: 60px 40px; 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+/* Styling for Headings */
+.bonuses-section h2, .bonuses-section h3 {
+    color: #007bff; 
+    font-weight: 700;
+}
+
+.bonuses-section h3 {
+    font-size: 1.5rem; 
+    color: #495057; 
+}
+
+/* List Item Styles */
+.bonus-list li {
+    border-radius: 8px; 
+    padding: 12px 15px;
+    margin-bottom: 15px !important; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.bonus-list li:hover {
+    transform: translateY(-5px); 
+    background-color: #fff; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+}
+
+/* Icons and text */
+.bonus-list .fa-check-circle {
+    min-width: 20px;
+    color: #dc3545; 
+    font-size: 1.2rem; 
+}
+
+.bonus-list li span {
+    font-size: 1.1rem;
+    color: #343a40;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .bonuses-section {
+        padding: 30px 20px;
+        margin: 20px auto;
+    }
+    .bonuses-section h2 {
+        font-size: 2rem;
+    }
+    .bonuses-section h3 {
+        font-size: 1.2rem;
+    }
+    .bonus-list li {
+        padding: 10px;
+    }
+    .bonus-list li span {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Main Section with Unique Background */
+.running-logo-section {
+    position: relative;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+/* Heading Style */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #495057;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* The marquee container */
+.running-logo-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* The list of logos to animate */
+.running-logo-list {
+    display: inline-flex;
+    animation: marquee 15s linear infinite; 
+}
+
+.running-logo-list:hover {
+    animation-play-state: paused;
+}
+
+/* The actual animation keyframes */
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Styles for each individual logo card */
+.logo-box {
+    background-color: #e94e0f;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    min-width: 170px;
+    height: 90px;
+    flex-shrink: 0;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Unique Hover Effect on Logo Boxes */
+.logo-box:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.logo-img {
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%); 
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect on the images */
+.logo-img:hover {
+    filter: none;
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo-box {
+        min-width: 120px;
+        margin: 0 10px;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+}

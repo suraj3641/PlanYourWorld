@@ -204,7 +204,73 @@ body {
   }
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* A light grey background for the section */
+}
 
+/* Section Title */
+.section-title {
+    color: #0d6efd; /* Bootstrap primary color */
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+/* Mentor List Items */
+.mentor-list {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+/* Check Icons */
+.mentor-list .fa-check-circle {
+    color: #dc3545; /* A color similar to the checkmark in the image */
+}
+
+/* Mentor Image container */
+.mentor-image-container img {
+    border-radius: 15px; /* Subtle rounded corners */
+    transition: transform 0.5s ease-in-out;
+}
+
+.mentor-image-container img:hover {
+    transform: scale(1.03); /* Subtle zoom on hover */
+}
+
+/* Custom Animations */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 /* footer section */
