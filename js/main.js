@@ -10,7 +10,6 @@ setInterval(() => {
   document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
 }, 1000);
 
-
 // ✅ Navbar & Mobile Toggle
 document.addEventListener("DOMContentLoaded", () => {
   const mobileToggle = document.getElementById("mobileToggle");
