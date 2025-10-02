@@ -10,7 +10,7 @@ setInterval(() => {
   document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
 }, 1000);
 
-// ✅ Navbar & Mobile Toggle
+// Navbar & Mobile Toggle
 document.addEventListener("DOMContentLoaded", () => {
   const mobileToggle = document.getElementById("mobileToggle");
   const navbarNav = document.getElementById("navbarNav");
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileToggle.classList.toggle("open");
   });
 
-  // Close menu when a nav-link (except dropdown-toggle) is clicked
+  // Close menu when a nav-link is clicked
   document.querySelectorAll(".nav-link").forEach(link => {
     if (!link.classList.contains("dropdown-toggle")) {
       link.addEventListener("click", () => {
