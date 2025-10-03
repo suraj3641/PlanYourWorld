@@ -1,4 +1,4 @@
-// ✅ Countdown Timer
+// Countdown Timer
 const targetDate = new Date("Oct 9, 2025 19:30:00").getTime();
 setInterval(() => {
   const now = new Date().getTime();
