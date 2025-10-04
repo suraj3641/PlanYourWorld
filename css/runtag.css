@@ -41,7 +41,7 @@ body {
 
 /* Styles for each individual logo card */
 .logo-box {
-    background-color: #e94e0f;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     min-width: 170px;
